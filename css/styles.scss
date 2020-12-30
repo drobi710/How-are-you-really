@@ -7,13 +7,22 @@ p {
     color: $color-primary;
 }
 
-// .indexBody {
-// background: url(/img/indexbackground.png) no-repeat center center fixed;
-// //   -webkit-background-size: cover;
-// //   -moz-background-size: cover;
-//   background-size: cover;
-// //   -o-background-size: cover;
-// }
+@media only screen and (max-width: 600px) {
+    // hook into your image with css
+  img {
+     //this actually does the rotation
+    -ms-transform: rotate(90deg); /* webkit for browsers IE 9 */
+    transform: rotate(90deg);
+   }
+}
+
+#indexBody {
+background: url(/img/indexbackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 
 #landingPageHeader {
     font-family: $header-font;
@@ -22,5 +31,12 @@ p {
 
 #landingPagefooter {
     font-family: $header-font;
-    font-size: 2.3vw;    
+    font-size: 2.6vw;    
+}
+
+#landingButton {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    z-index: 1;
 }
