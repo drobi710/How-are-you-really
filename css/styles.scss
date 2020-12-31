@@ -2,27 +2,37 @@ $color-primary: black;
 $color-secondary: white;
 
 $header-font: 'Righteous', cursive;
+$secondary-font: 'Montserrat', sans-serif;
 
 p {
     color: $color-primary;
+    font-family: $secondary-font;
 }
 
-@media only screen and (max-width: 600px) {
-    // hook into your image with css
-  img {
-     //this actually does the rotation
-    -ms-transform: rotate(90deg); /* webkit for browsers IE 9 */
-    transform: rotate(90deg);
-   }
+button {
+    font-family: $secondary-font;
 }
+
 
 #indexBody {
-background: url(/img/indexbackground.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    background: url(/img/indexbackground.jpg)fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
+
+#homepageBody {
+    background: url(/img/homePageBackground.jpg)fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    }
 
 #landingPageHeader {
     font-family: $header-font;
@@ -31,7 +41,7 @@ background: url(/img/indexbackground.jpg) no-repeat center center fixed;
 
 #landingPagefooter {
     font-family: $header-font;
-    font-size: 2.6vw;    
+    font-size: 2.6vmax;    
 }
 
 #landingButton {
@@ -39,4 +49,36 @@ background: url(/img/indexbackground.jpg) no-repeat center center fixed;
     top: 10px;
     right: 16px;
     z-index: 1;
+}
+
+#getStartedBtn {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+
+#dropdownMenuButton {
+    color: $color-primary;
+  }
+
+.fas {
+        color: $color-primary;
+        }
+
+#womanHome {
+    max-width: 100%;
+}
+
+#subscribeBtn {
+    background-color: rgb(95, 226, 226);
+    color: $color-secondary;
+}
+
+#homepageHeader {
+    font-family: $header-font;
 }

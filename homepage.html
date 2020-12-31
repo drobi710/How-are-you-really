@@ -6,22 +6,64 @@
     
 <!-- build:css css/main.css -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<script src="https://kit.fontawesome.com/d6878949a0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 <link rel="stylesheet" href="css/styles.css" />
 <!-- endbuild -->
 
-<!-- add non css links here example: google fonts
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" /> -->
+<!-- add non css links here example: google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
 
 
     <title>How are you, Really?</title>
 </head>
-<body>
+<body  id="homepageBody">
     
     <header>
 
     </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <button id="getStartedBtn" type = "button" class = "btn btn-large navbar-btn mr-auto">GET STARTED</button>
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo" height="45"></a>    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <button class="btn btn-lg dropdown-toggle navbar-btn nav-item dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/howitworks.html">How It Works</a>
+                        <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
+                        <a class="dropdown-item" href="/faq.html">FAQ</a>
+                    </div>
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/loginmodal.html"><i class="fas fa-user fa-lg"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shoppingcart.html"><i class="fas fa-shopping-bag fa-lg"></i></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i></a></li>
+                </ul>
+            </div>
+    </nav>
+
+<div class="container">
+    <div class="row row-content">
+        <div class="col-12 col-md-6 text-center">
+                    <h3 id="homepageHeader">How are you,</br>Really?</h3>
+                    <p class="text-justify">In here goes the description product. All about how amazing it is to check-in with yourselff monthly for a mental health check-in with yourself, how the Box will help you thorugh your journey and do all the great things lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button type="button" id="subscribeBtn" class="btn btn-large">SUBSCRIBE OR SEND HOPE</button>
+                </div>
+                <div class="col-12 col-md-6">
+                <img id="womanHome" src="/img/Self-Love-transparent.png" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer>
 
