@@ -4,6 +4,16 @@ $color-secondary: white;
 $header-font: 'Righteous', cursive;
 $secondary-font: 'Montserrat', sans-serif;
 
+h1 {
+    font-family: $header-font;
+    color: $color-primary;
+}
+
+h2 {
+    font-family: $header-font;
+    color: $color-primary;
+}
+
 p {
     color: $color-primary;
     font-family: $secondary-font;
@@ -102,4 +112,37 @@ button {
 #homepageText {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+#boxDescBody {
+    background: url(/img/whatsinboxbkg.jpg);
+    background-color: #29232d;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.164);
+        h5 {
+            // font-size: 16px;
+            font-family: $header-font;
+        }
+        p {
+            // font-size: 3vw;
+            font-family: $secondary-font;
+        }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+    height: 30px;
+    width: 30px;
 }

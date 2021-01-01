@@ -1,3 +1,11 @@
+h1 {
+  font-family: "Righteous", cursive;
+  color: black; }
+
+h2 {
+  font-family: "Righteous", cursive;
+  color: black; }
+
 p {
   color: black;
   font-family: "Montserrat", sans-serif; }
@@ -81,3 +89,29 @@ button {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */ }
+
+#boxDescBody {
+  background: url(/img/whatsinboxbkg.jpg);
+  background-color: #29232d;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.164); }
+  .carousel-caption h5 {
+    font-family: "Righteous", cursive; }
+  .carousel-caption p {
+    font-family: "Montserrat", sans-serif; }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  height: 30px;
+  width: 30px; }
