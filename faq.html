@@ -6,22 +6,124 @@
     
 <!-- build:css css/main.css -->
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+<script src="https://kit.fontawesome.com/d6878949a0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 <link rel="stylesheet" href="css/styles.css" />
 <!-- endbuild -->
 
-<!-- add non css links here example: google fonts
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" /> -->
+<!-- add non css links here example: google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
 
 
     <title>How are you, Really?</title>
 </head>
-<body>
+<body id="faqBody">
     
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <button id="getStartedBtn" type = "button" class = "btn btn-large navbar-btn mr-auto">GET STARTED</button>
+            <a class="navbar-brand" href="#"><img src="/img/logo.png" alt="logo" height="45"></a>    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <button class="btn btn-lg dropdown-toggle navbar-btn nav-item dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/howitworks.html">How It Works</a>
+                        <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
+                        <a class="dropdown-item" href="/faq.html">FAQ</a>
+                    </div>
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/loginmodal.html"><i class="fas fa-user fa-lg"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shoppingcart.html"><i class="fas fa-shopping-bag fa-lg"></i></a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i></a></li>
+                </ul>
+            </div>
+    </nav>
+
     <header>
 
     </header>
+
+    <!-- FAQ Accordian card -->
+    <div class="container mt-3">
+        <div class="row row-content">
+            <div class="col">
+                <!-- accordian card heading -->
+                <h3>FAQ</h3>
+                <!-- accordian -->
+                <div id="accordionFAQ">
+                    <!-- first accordian tab -->
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <!-- tab heading -->
+                            <h4 id="FAQHeaders">
+                                <a data-toggle="collapse" data-target="#howWorkFAQ">
+                                    How does it work?
+                                </a>
+                            </h4>
+                            <!-- tab body -->
+                            <div class="collapse show" id="howWorkFAQ" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    <p class="">It’s really simple (like all good inspiration!), just pick your subscription (monthly, or prepay), then each month we will send you a carefully curated box that includes items to help you live your most inspired life. Sign up easily and cancel anytime!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second accordian tab -->
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4 id="FAQHeaders">
+                                <a class="collapsed" data-toggle="collapse" data-target="#itemsFAQ">
+                                    What will be in my box?
+                                </a>
+                            </h4>
+                            <div class="collapse" id="itemsFAQ" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    <p class="">Each month we choose a different inspirational theme and products that go along with that.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third accordian tab -->
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4 id="FAQHeaders">
+                                <a class="collapsed" data-toggle="collapse" data-target="#giftFAQ">
+                                    Can I send a box as a gift?
+                                </a>
+                            </h4>
+                            <div class="collapse" id="giftFAQ" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    <p class="">Absolutely! Inspiration is such a wonderful gift, we’re sure whomever you gift this to will be delighted. When you check out, you will fill out your billing information, then at the bottom of that section, simply choose “Ship to a different address” and you can enter your gift recipient’s address. We do not include a packing slip with the box, so they won’t ever see your payment information.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth accordian tab -->
+                    <div class="card">
+                        <div role="tab" class="card-header">
+                            <h4 id="FAQHeaders">
+                                <a class="collapsed" data-toggle="collapse" data-target="#damageFAQ">
+                                    My Inspiration Box arrived damaged, what do I do?
+                                </a>
+                            </h4>
+                            <div class="collapse" id="damageFAQ" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    <p class="">We’re so sorry! Contact us by email and our customer care team will figure out a solution right away!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
 

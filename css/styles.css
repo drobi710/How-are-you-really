@@ -1,8 +1,8 @@
-h1 {
+h1, h2, h3 {
   font-family: "Righteous", cursive;
   color: black; }
 
-h2 {
+#FAQHeaders a {
   font-family: "Righteous", cursive;
   color: black; }
 
@@ -115,3 +115,18 @@ button {
   filter: invert(1);
   height: 30px;
   width: 30px; }
+
+#faqBody {
+  background: url(/img/FAQbackground.jpg) fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.card-body {
+  font-family: "Montserrat", sans-serif; }
+
+div.card {
+  background: rgba(255, 255, 255, 0.322); }

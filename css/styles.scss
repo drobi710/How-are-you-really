@@ -4,16 +4,17 @@ $color-secondary: white;
 $header-font: 'Righteous', cursive;
 $secondary-font: 'Montserrat', sans-serif;
 
-h1 {
+h1, h2, h3 {
     font-family: $header-font;
     color: $color-primary;
 }
 
-h2 {
-    font-family: $header-font;
-    color: $color-primary;
+#FAQHeaders{
+    a {
+        font-family: $header-font;
+        color: $color-primary;
+    }
 }
-
 p {
     color: $color-primary;
     font-family: $secondary-font;
@@ -145,4 +146,22 @@ button {
     filter: invert(1);
     height: 30px;
     width: 30px;
+}
+
+#faqBody {
+    background: url(/img/FAQbackground.jpg) fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.card-body {
+    font-family: $secondary-font;
+}
+
+div.card{
+    background: rgba(255, 255, 255, 0.322);
 }
