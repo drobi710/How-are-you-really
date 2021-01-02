@@ -2,6 +2,11 @@ h1, h2, h3 {
   font-family: "Righteous", cursive;
   color: black; }
 
+.myDarkBtn {
+  font-family: "Montserrat", sans-serif;
+  background: black;
+  color: white; }
+
 #FAQHeaders a {
   font-family: "Righteous", cursive;
   color: black; }
@@ -15,6 +20,15 @@ button {
 
 #indexBody {
   background: url(/img/indexbackground.jpg) fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+#storeBody {
+  background: url(/img/storebkgrnd.jpg) fixed;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

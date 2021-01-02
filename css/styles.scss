@@ -9,6 +9,12 @@ h1, h2, h3 {
     color: $color-primary;
 }
 
+.myDarkBtn {
+    font-family: $secondary-font;
+    background: $color-primary;
+    color: $color-secondary;
+}
+
 #FAQHeaders{
     a {
         font-family: $header-font;
@@ -27,6 +33,16 @@ button {
 
 #indexBody {
     background: url(/img/indexbackground.jpg)fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#storeBody {
+    background: url(/img/storebkgrnd.jpg)fixed;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
