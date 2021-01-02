@@ -130,3 +130,19 @@ button {
 
 div.card {
   background: rgba(255, 255, 255, 0.322); }
+
+.form-group {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+.form-title p {
+  font-size: 12px; }
+
+#signInBtn {
+  background-color: black;
+  color: white; }
+
+#createAccBtn {
+  background-color: white;
+  border-style: solid;
+  border-color: black; }

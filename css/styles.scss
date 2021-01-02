@@ -165,3 +165,25 @@ button {
 div.card{
     background: rgba(255, 255, 255, 0.322);
 }
+
+.form-group {
+        font-family: $secondary-font;
+        color: $color-primary;
+}
+
+.form-title {
+    p {
+        font-size: 12px;
+    }
+}
+
+#signInBtn {
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+
+#createAccBtn {
+    background-color: white;
+    border-style: solid;
+    border-color: $color-primary;
+}
