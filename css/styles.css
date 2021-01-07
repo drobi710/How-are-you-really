@@ -172,3 +172,41 @@ button {
   background-color: rgba(234, 245, 226, 0.603);
   margin-bottom: -10px;
   z-index: 1; }
+
+#footerLogo {
+  height: 125px;
+  width: auto;
+  top: -23px;
+  left: 168px;
+  position: absolute;
+  z-index: 1; }
+
+#imageDiv {
+  position: absolute;
+  width: 500px;
+  height: 500px; }
+
+#hastagDiv {
+  position: absolute;
+  width: 500px;
+  height: 500px; }
+
+#hastagLogo {
+  height: 100px;
+  width: auto;
+  top: 243px;
+  left: 365px;
+  position: absolute; }
+
+.footerSocial {
+  color: #b8b8b8;
+  margin: 5px;
+  z-index: 1; }
+  .footerSocial:hover {
+    color: black; }
+
+.footerLinks {
+  color: black;
+  font-family: "Righteous", cursive; }
+  .footerLinks:hover {
+    color: grey; }

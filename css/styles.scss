@@ -226,3 +226,50 @@ button {
     margin-bottom: -10px;
     z-index: 1;
 }
+
+#footerLogo {
+    height: 125px;
+    width: auto;
+    top: -23px;
+    left: 168px;
+    position: absolute;
+    z-index: 1;
+}
+
+#imageDiv {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+#hastagDiv {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+#hastagLogo {
+    height: 100px;
+    width: auto;
+    top: 243px;
+    left: 365px;
+    position: absolute;
+    // z-index: 2;
+}
+
+.footerSocial {
+    color: rgb(184, 184, 184);
+    margin: 5px;
+    z-index: 1;
+    &:hover {
+        color:$color-primary;
+    }
+}
+
+.footerLinks {
+    color: $color-primary;
+    font-family: $header-font;
+    &:hover {
+        color:grey;
+    }
+}
