@@ -22,32 +22,39 @@
 </head>
 <body  id="homepageBody">
     
-    <header>
+    <!-- <header>
 
-    </header>
+    </header> -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm sticky-top">
-        <a id="getStartedBtn" href="/store.html" class="btn btn-large navbar-btn mr-auto" role="button">GET STARTED</a>
-            <a class="navbar-brand" href="/homepage.html"><img src="/img/logo.png" alt="logo" height="45"></a>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!-- <a id="getStartedBtn" href="/store.html" class="btn btn-large navbar-btn" role="button">GET STARTED</a>
+            <a class="navbar-brand" href="/homepage.html"><img src="/img/logo.png" alt="logo" height="45"></a>     -->
+            <div id="bigNav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                    <button class="btn btn-lg dropdown-toggle navbar-btn nav-item dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bars"></i> 
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="/howitworks.html">How It Works</a>
-                        <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
-                        <a class="dropdown-item" href="/faq.html">FAQ</a>
-                    </div>
             <div class="collapse navbar-collapse" id="topNavbar">
-                <ul class="navbar-nav ml-auto">
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div class="dropdown navbar-right" id="navbarDropDown">
+                        <button class="btn btn-lg dropdown-toggle dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bars"></i> 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="/howitworks.html">How It Works</a>
+                            <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
+                            <a class="dropdown-item" href="/faq.html">FAQ</a>
+                        </div>
+                    </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="/loginmodal.html" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user fa-lg"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="/shoppingcart.html"><i class="fas fa-shopping-bag fa-lg"></i></a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i></a></li>
                 </ul>
             </div>
+        </div>
     </nav>
 
     <!-- modal pop up for login -->

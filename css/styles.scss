@@ -4,7 +4,7 @@ $color-secondary: white;
 $header-font: 'Righteous', cursive;
 $secondary-font: 'Montserrat', sans-serif;
 
-h1, h2, h3 {
+h1, h2, h3, h5, h6 {
     font-family: $header-font;
     color: $color-primary;
 }
@@ -60,6 +60,13 @@ button {
     background-size: cover;
     -o-background-size: cover;
     }
+
+#howDoesItWorkBody {
+    background: url(/img/howdoesitworkbckgrnd.jpg)fixed;
+    background-position: center 25%;
+    background-repeat: repeat-x;
+    
+}
 
 #landingPageHeader {
     font-family: $header-font;
@@ -174,13 +181,13 @@ button {
     -o-background-size: cover;
 }
 
-.card-body {
-    font-family: $secondary-font;
-}
+// .card-body {
+//     font-family: $secondary-font;
+// }
 
-div.card{
-    background: rgba(255, 255, 255, 0.322);
-}
+// div.card{
+//     background: rgba(255, 255, 255, 0.322);
+// }
 
 .form-group {
         font-family: $secondary-font;
@@ -202,4 +209,20 @@ div.card{
     background-color: white;
     border-style: solid;
     border-color: $color-primary;
+}
+
+#bigNav {
+    // float: right !important;
+    margin-left: 80%;
+}
+
+.howWorksCardHeader {
+    width: auto;
+    height: auto;
+    font-size: large;
+    font-weight: bold;
+    font-family: $header-font;
+    background-color: rgba(234, 245, 226, 0.603);
+    margin-bottom: -10px;
+    z-index: 1;
 }

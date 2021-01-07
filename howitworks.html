@@ -20,11 +20,119 @@
 
     <title>How are you, Really?</title>
 </head>
-<body>
+<body id="howDoesItWorkBody">
     
-    <header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <a id="getStartedBtn" href="/store.html" class="btn btn-large navbar-btn mr-auto" role="button">GET STARTED</a>
+            <a class="navbar-brand" href="/homepage.html"><img src="/img/logo.png" alt="logo" height="45"></a>    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <button class="btn btn-lg dropdown-toggle navbar-btn nav-item dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/howitworks.html">How It Works</a>
+                        <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
+                        <a class="dropdown-item" href="/faq.html">FAQ</a>
+                    </div>
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/loginmodal.html" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user fa-lg"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shoppingcart.html"><i class="fas fa-shopping-bag fa-lg"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/homepage.html"><i class="fas fa-home fa-lg"></i></a></li>
+                </ul>
+            </div>
+    </nav>
 
-    </header>
+    <!-- modal pop up for login -->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- modal header with X-botton to close -->
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times; </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="form-title text-center">
+                        <h4>Sign-In</h4>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="email1" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email1"placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="password1" class="form-label">Password:</label>
+                                <input type="password" class="form-control" id="password1" placeholder="">
+                            </div>
+                            <button type="button" class="btn btn-block" id="signInBtn">Sign In</button>
+                            <hr>
+                            <div class="form-title text-center">
+                                <h4 class="p-2">Sign-Up</h4>
+                                <p>Welcome! It's quick and easy to set up an account.</p>
+                            </div>
+                            <button type="button" class="btn btn-block"  id="createAccBtn">Create an Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- modal pop-up for login end -->
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center">How does it Work?</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="text-center">Encouragement, comfort, celebration, and support through uplifting gifts to help you through your journey of self-love and mental health</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 text-center">
+            <div class="card text-center border-0 bg-transparent">
+                <div class="card-header rounded-circle mx-auto howWorksCardHeader">
+                    1
+                </div>
+                <img class="card-img-top rounded-circle img-fluid" src="/img/girlpourwaterflowers.jpg" alt="girl pouring water on head to grow herself">
+                <div class="card-body">
+                  <h5 class="card-title">Choose Your Box</h5>
+                  <p class="card-text">Choose from our monthly plan with a 1 month, 3 month, or 6 month duration, or choose a one-time gift. Cancel Anytime</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <div class="card text-center border-0 bg-transparent">
+                <div class="card-header rounded-circle mx-auto howWorksCardHeader">
+                    2
+                </div>
+                <img class="card-img-top rounded-circle img-fluid" src="/img/headlesshugselflove.png" alt="hugging self love">
+                <div class="card-body">
+                  <h5 class="card-title">Recieve Your Monthly Box</h5>
+                  <p class="card-text">Choose from our monthly plan with a 1 month, 3 month, or 6 month duration, or choose a one-time gift. Cancel Anytime</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <div class="card text-center border-0 bg-transparent">
+                <div class="card-header rounded-circle mx-auto howWorksCardHeader">
+                    3
+                </div>
+                <img class="card-img-top rounded-circle img-fluid" src="/img/girlinflowerring.jpg" alt="girl happy inside flowers">
+                <div class="card-body">
+                  <h5 class="card-title">Enjoy Your Progress</h5>
+                  <p class="card-text">Choose from our monthly plan with a 1 month, 3 month, or 6 month duration, or choose a one-time gift. Cancel Anytime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer>
 

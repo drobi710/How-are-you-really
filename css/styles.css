@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1, h2, h3, h5, h6 {
   font-family: "Righteous", cursive;
   color: black; }
 
@@ -44,6 +44,11 @@ button {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+
+#howDoesItWorkBody {
+  background: url(/img/howdoesitworkbckgrnd.jpg) fixed;
+  background-position: center 25%;
+  background-repeat: repeat-x; }
 
 #landingPageHeader {
   font-family: "Righteous", cursive;
@@ -139,12 +144,6 @@ button {
   background-size: cover;
   -o-background-size: cover; }
 
-.card-body {
-  font-family: "Montserrat", sans-serif; }
-
-div.card {
-  background: rgba(255, 255, 255, 0.322); }
-
 .form-group {
   font-family: "Montserrat", sans-serif;
   color: black; }
@@ -160,3 +159,16 @@ div.card {
   background-color: white;
   border-style: solid;
   border-color: black; }
+
+#bigNav {
+  margin-left: 80%; }
+
+.howWorksCardHeader {
+  width: auto;
+  height: auto;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Righteous", cursive;
+  background-color: rgba(234, 245, 226, 0.603);
+  margin-bottom: -10px;
+  z-index: 1; }
