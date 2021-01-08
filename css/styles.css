@@ -176,27 +176,21 @@ button {
 #footerLogo {
   height: 125px;
   width: auto;
-  top: -23px;
-  left: 168px;
+  bottom: 60px;
+  left: -60px;
   position: absolute;
   z-index: 1; }
 
-#imageDiv {
-  position: absolute;
-  width: 500px;
-  height: 500px; }
-
-#hastagDiv {
-  position: absolute;
-  width: 500px;
-  height: 500px; }
-
-#hastagLogo {
+#hashtagLogo {
   height: 100px;
   width: auto;
-  top: 243px;
-  left: 365px;
-  position: absolute; }
+  top: 210px;
+  left: 145px;
+  position: absolute;
+  z-index: -1; }
+
+.footerRelative {
+  position: relative; }
 
 .footerSocial {
   color: #b8b8b8;
