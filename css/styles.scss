@@ -9,6 +9,11 @@ h1, h2, h3, h5, h6 {
     color: $color-primary;
 }
 
+.headerText {
+    font-family: $header-font;
+    color: $color-primary;
+}
+
 .myDarkBtn {
     font-family: $secondary-font;
     background: $color-primary;
@@ -236,23 +241,17 @@ button {
     z-index: 1;
 }
 
-// #footerImageDiv {
-//     position: absolute;
-//     width: 500px;
-//     height: 500px;
-// }
-
 #hashtagLogo {
     height: 100px;
     width: auto;
     top: 210px;
     left: 145px;
     position: absolute;
-    z-index: -1;
 }
 
 .footerRelative {
     position: relative;
+    z-index: 1;
 }
 
 .footerSocial {
@@ -270,4 +269,8 @@ button {
     &:hover {
         color:grey;
     }
+}
+
+#footerIcons {
+    margin-bottom: 100px;
 }

@@ -2,6 +2,10 @@ h1, h2, h3, h5, h6 {
   font-family: "Righteous", cursive;
   color: black; }
 
+.headerText {
+  font-family: "Righteous", cursive;
+  color: black; }
+
 .myDarkBtn {
   font-family: "Montserrat", sans-serif;
   background: black;
@@ -186,11 +190,11 @@ button {
   width: auto;
   top: 210px;
   left: 145px;
-  position: absolute;
-  z-index: -1; }
+  position: absolute; }
 
 .footerRelative {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
 
 .footerSocial {
   color: #b8b8b8;
@@ -204,3 +208,6 @@ button {
   font-family: "Righteous", cursive; }
   .footerLinks:hover {
     color: grey; }
+
+#footerIcons {
+  margin-bottom: 100px; }
