@@ -84,11 +84,85 @@
     </div>
 <!-- modal pop-up for login end -->
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 ml-auto">
+            <form class="border p-1 pt-3 ">
+                <h5>Order Summary</h5>
+                <hr>
+                <figure class="figure">
+                <img src="/img/box-transparent-logo.png" class="figure-img img-fluid w-75 mx-auto pl-3 d-block" alt="your item in cart">
+                <figcaption class="figure-caption text-center">3-Month Box Subscription</figcaption>
+                </figure>
+                <div class="form-group row">
+                    <label for="subtotal" class="col-auto col-form-label">Subtotal</label>
+                    <div class="col-auto ml-auto ">
+                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="subtotal" value="$64.00">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="shipping" class="col-auto col-form-label">Shipping</label>
+                    <div class="col-auto ml-auto ">
+                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="shipping" value="TBD">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="estTax" class="col-auto col-form-label">Estimated Tax</label>
+                    <div class="col-auto ml-auto ">
+                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="estTax" value="$0.00">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="totalCost" class="col-auto col-form-label font-weight-bold">Total</label>
+                    <div class="col-auto ml-auto ">
+                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="totalCost" value="$64.00">
+                    </div>
+                </div>
+                <div class="input-group form-group">
+                    <input type="text" class="form-control" placeholder="Promo code">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="form-title text-center">
+                <h4>Sign-In</h4>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="email1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email1"placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password1" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password1" placeholder="">
+                    </div>
+                    <button type="button" class="btn btn-block" id="signInBtn">Sign In</button>
+        </div>
+        <div class="col-12 col-md-6">
+            <h5>Check Out As A Guest</h5>
+            <h6>Shipping Address</h6>
+                <form action="">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="name" class="form-control" id="lastName" placeholder="Last name">
+                    </div>
+                    <hr>
 
-    <header>
-
-    </header>
-
+                </form>
+        </div>
+    </div>
+</div>
+    
     <footer>
 
     </footer>
