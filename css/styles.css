@@ -214,3 +214,7 @@ button {
 
 #homePgContainer {
   height: 100vh; }
+
+.orderSummaryText {
+  font-size: 14px;
+  margin-bottom: -2px; }

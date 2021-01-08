@@ -84,54 +84,65 @@
     </div>
 <!-- modal pop-up for login end -->
 
+
 <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 ml-auto">
-            <form class="border p-1 pt-3 ">
-                <h5>Order Summary</h5>
+    <div class="row mt-4">
+        <div class="col-12">
+            <h3>SHIPPING <small class="text-muted">/ PAYMENT / REVIEW</small></h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row mt-4 mb-5">
+        <div class="col-12 col-md-5 mx-auto border">
+            <form class="p-3 pt-3">
+                <div class="form-title text-center">
+                    <h4>Order Summary</h4>
                 <hr>
+                </div>
                 <figure class="figure">
-                <img src="/img/box-transparent-logo.png" class="figure-img img-fluid w-75 mx-auto pl-3 d-block" alt="your item in cart">
+                <img src="/img/box-transparent-logo.png" class="figure-img img-fluid w-50 mx-auto pl-3 d-block" alt="your item in cart">
                 <figcaption class="figure-caption text-center">3-Month Box Subscription</figcaption>
                 </figure>
-                <div class="form-group row">
-                    <label for="subtotal" class="col-auto col-form-label">Subtotal</label>
-                    <div class="col-auto ml-auto ">
-                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="subtotal" value="$64.00">
+                <div class="form-group row orderSummaryText">
+                    <label for="subtotal" class="col-6 col-form-label">Subtotal</label>
+                    <div class="col-6">
+                      <input type="text" class="border-0 form-text w-100 text-right" readonly class="form-control-plaintext" id="subtotal" value="$64.00">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="shipping" class="col-auto col-form-label">Shipping</label>
-                    <div class="col-auto ml-auto ">
-                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="shipping" value="TBD">
+                <div class="form-group row orderSummaryText">
+                    <label for="shipping" class="col-6 col-form-label">Shipping</label>
+                    <div class="col-6">
+                      <input type="text" class="border-0 form-text w-100 text-right" readonly class="form-control-plaintext" id="shipping" value="TBD">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="estTax" class="col-auto col-form-label">Estimated Tax</label>
-                    <div class="col-auto ml-auto ">
-                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="estTax" value="$0.00">
+                <div class="form-group row orderSummaryText">
+                    <label for="estTax" class="col-6 col-form-label">Estimated Tax</label>
+                    <div class="col-6">
+                      <input type="text" class="border-0 form-text w-100 text-right" readonly class="form-control-plaintext" id="estTax" value="$0.00">
                     </div>
                 </div>
                 <hr>
-                <div class="form-group row">
-                    <label for="totalCost" class="col-auto col-form-label font-weight-bold">Total</label>
-                    <div class="col-auto ml-auto ">
-                      <input type="text" class="text-right border-0 form-text" readonly class="form-control-plaintext" id="totalCost" value="$64.00">
+                <div class="form-group row orderSummaryText">
+                    <label for="totalCost" class="col-6 col-form-label font-weight-bold">Total</label>
+                    <div class="col-6">
+                      <input type="text" class="border-0 form-text w-100 text-right" readonly class="form-control-plaintext" id="totalCost" value="$64.00">
                     </div>
                 </div>
-                <div class="input-group form-group">
+                <div class="input-group form-group mt-3">
                     <input type="text" class="form-control" placeholder="Promo code">
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                        <button type="submit" class="btn myDarkBtn">Redeem</button>
                     </div>
                 </div>
             </form>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 pr-4 mb-5">
+            <form class="border p-5" action="">
             <div class="form-title text-center">
                 <h4>Sign-In</h4>
+                <hr>
                 </div>
                 <form>
                     <div class="form-group">
@@ -143,11 +154,15 @@
                         <input type="password" class="form-control" id="password1" placeholder="">
                     </div>
                     <button type="button" class="btn btn-block" id="signInBtn">Sign In</button>
-        </div>
-        <div class="col-12 col-md-6">
-            <h5>Check Out As A Guest</h5>
-            <h6>Shipping Address</h6>
-                <form action="">
+            </div>
+            </form>
+        <div class="col-12 col-md-6 pl-4">
+            <form class="border p-4" action="">
+                <div class="form-title text-center">
+                <h4>Check Out As A Guest</h4>
+            <hr>
+                </div>
+            <h6 class="my-4">Contact Information</h6>
                     <div class="form-group">
                         <label for="firstName">First Name:</label>
                         <input type="name" class="form-control" id="firstName" placeholder="First name">
@@ -156,12 +171,61 @@
                         <label for="lastName">Last Name:</label>
                         <input type="name" class="form-control" id="lastName" placeholder="Last name">
                     </div>
-                    <hr>
-
-                </form>
+                    <div class="form-group">
+                        <label for="guestEmail">Email:</label>
+                        <input type="email" class="form-control" id="guestEmail" placeholder="Email">
+                    </div><div class="form-group">
+                        <label for="guestPhone">Phone Number:</label>
+                        <input type="tel" class="form-control" id="guestPhone" placeholder="Phone number">
+                    </div>
+                    <hr class="my-4">
+            <h6 class="my-4">Shipping Information</h6>
+                <div class="form-group">
+                    <label for="guestAddress">Address:</label>
+                    <input type="text" class="form-control" id="guestAddress" placeholder="123 Address St">
+                </div>
+                <div class="form-group">
+                    <label for="guestAddress2">
+                        Address 2:
+                        <span class="text-muted">(Optional)</span>
+                    </label>
+                    <input type="text" class="form-control" id="guestAddress2" placeholder="Apartment or suite">
+                </div>
+                <div class="form-row">
+                    <div class="col-md-5">
+                        <label for="guestCountry">Country</label>
+                        <select class="custom-select" name="guestCountry" id="guestCountry">
+                            <option value=>Choose...</option>
+                            <option value="1">United States</option>
+                        </select>
+                    </div>
+                        <div class="col-md-4">
+                            <label for="guestState">State</label>
+                            <select name="guestState" id="guestState" class="custom-select">
+                                <option value="">Choose..</option>
+                                <option value="1">Alabama</option>
+                                <option value="2">California</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="guestZip">Zip Code</label>
+                            <input type="text" class="form-control" id="guestZip" placeholder="">
+                        </div>
+                    </div>
+                         <div class="form-check my-3">
+                            <input class="form-check-input" type="checkbox" value="" id="guestSameShip">
+                            <label class="form-check-label" for="guestSameShip">
+                            Shipping address is the same as my billing address
+                            </label>
+                        </div>
+                        <button class="btn myDarkBtn btn-md btn-block mt-4" type="submit">Continue to checkout</button>
+            </form>
+        </div>
         </div>
     </div>
+<hr>
 </div>
+
     
     <footer>
 
