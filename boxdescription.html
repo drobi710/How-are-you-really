@@ -27,29 +27,42 @@
     </header>
 
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-sm sticky-top">
-        <a id="getStartedBtn" href="/store.html" class="btn btn-large navbar-btn mr-auto" role="button">GET STARTED</a>
-            <a class="navbar-brand" href="/homepage.html"><img src="/img/logo.png" alt="logo" height="45"></a>    
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                    <button class="btn btn-lg dropdown-toggle navbar-btn nav-item dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bars"></i> 
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="/howitworks.html">How It Works</a>
-                        <a class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
-                        <a class="dropdown-item" href="/faq.html">FAQ</a>
-                    </div>
-            <div class="collapse navbar-collapse" id="topNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="/loginmodal.html" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user fa-lg"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/shoppingcart.html"><i class="fas fa-shopping-bag fa-lg"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/homepage.html"><i class="fas fa-home fa-lg"></i></a></li>
-                </ul>
-            </div>
-    </nav>
+<!-- navbar -->
+<nav class="navbar navbar-expand-md bg-transparent navbar-light ">
+    <!-- navbar toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- logo -->
+        <a href="/homepage.html"><img src="/img/logo.png" alt="logo" id="navLogo"></a>
+    <!-- navbar insides -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a id="navText" class="nav-link" href="/homepage.html">Home</a>
+            </li>
+           <li class="nav-item dropdown">
+              <a id="navText" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Learn More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a id="navText" class="dropdown-item" href="/howitworks.html">How It Works</a>
+                <a id="navText" class="dropdown-item" href="#">What's in the Box?</a>
+                <a id="navText" class="dropdown-item" href="/faq.html">FAQ</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" role="button" id="loginButton">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a id="navText" class="nav-link" href="/shoppingcart.html">My Cart</a>
+            </li>
+          </ul>
+        </div>
+    <!-- get started button -->
+        <a id="getStartedBtn" href="/store.html" class="btn block-btn btn-large navbar-btn" role="button">GET STARTED</a>
+      </nav>
+    <!-- navbar end -->
 
     <!-- modal pop up for login -->
     <div id="loginModal" class="modal fade" role="dialog">

@@ -20,12 +20,30 @@ h1, h2, h3, h5, h6 {
     color: $color-secondary;
 }
 
+.footerLinks {
+    color: $color-primary;
+    font-family: $header-font;
+    &:hover {
+        color:grey;
+    }
+}
+
+#navText, #loginButton {
+    color: $color-primary;
+    font-family: $secondary-font;
+    &:hover {
+        color:rgb(107, 105, 105);
+    }
+}
+
+
 #FAQHeaders{
     a {
         font-family: $header-font;
         color: $color-primary;
     }
 }
+
 p {
     color: $color-primary;
     font-family: $secondary-font;
@@ -93,13 +111,16 @@ button {
 #getStartedBtn {
     background-color: $color-primary;
     color: $color-secondary;
+    font-style: $secondary-font;
+    &:hover {
+        color: $color-primary;
+        background-color: $color-secondary;
+    }
 }
 
-.navbar-brand {
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-  }
+#navLogo {
+    height: 50px;
+}
 
 #dropdownMenuButton {
     color: $color-primary;
@@ -263,21 +284,15 @@ button {
     }
 }
 
-.footerLinks {
-    color: $color-primary;
-    font-family: $header-font;
-    &:hover {
-        color:grey;
-    }
-}
+
 
 #footerIcons {
     margin-bottom: 100px;
 }
 
-#homePgContainer {
-    height: 100vh;
-}
+// #homePgContainer {
+//     height: 100vh;
+// }
 
 .orderSummaryText {
     font-size: 14px;

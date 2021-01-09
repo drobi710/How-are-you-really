@@ -11,6 +11,18 @@ h1, h2, h3, h5, h6 {
   background: black;
   color: white; }
 
+.footerLinks {
+  color: black;
+  font-family: "Righteous", cursive; }
+  .footerLinks:hover {
+    color: grey; }
+
+#navText, #loginButton {
+  color: black;
+  font-family: "Montserrat", sans-serif; }
+  #navText:hover, #loginButton:hover {
+    color: #6b6969; }
+
 #FAQHeaders a {
   font-family: "Righteous", cursive;
   color: black; }
@@ -70,12 +82,14 @@ button {
 
 #getStartedBtn {
   background-color: black;
-  color: white; }
+  color: white;
+  font-style: "Montserrat", sans-serif; }
+  #getStartedBtn:hover {
+    color: black;
+    background-color: white; }
 
-.navbar-brand {
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute; }
+#navLogo {
+  height: 50px; }
 
 #dropdownMenuButton {
   color: black; }
@@ -203,17 +217,8 @@ button {
   .footerSocial:hover {
     color: black; }
 
-.footerLinks {
-  color: black;
-  font-family: "Righteous", cursive; }
-  .footerLinks:hover {
-    color: grey; }
-
 #footerIcons {
   margin-bottom: 100px; }
-
-#homePgContainer {
-  height: 100vh; }
 
 .orderSummaryText {
   font-size: 14px;
