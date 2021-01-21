@@ -256,18 +256,11 @@ button {
 #footerLogo {
     height: 125px;
     width: auto;
-    bottom: 60px;
-    left: -60px;
-    position: absolute;
-    z-index: 1;
 }
 
 #hashtagLogo {
     height: 100px;
     width: auto;
-    top: 210px;
-    left: 145px;
-    position: absolute;
 }
 
 .footerRelative {
@@ -276,11 +269,11 @@ button {
 }
 
 .footerSocial {
-    color: rgb(184, 184, 184);
+    color: $color-primary;
     margin: 5px;
     z-index: 1;
     &:hover {
-        color:$color-primary;
+        color:rgb(184, 184, 184);
     }
 }
 

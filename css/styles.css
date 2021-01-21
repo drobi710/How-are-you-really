@@ -193,29 +193,22 @@ button {
 
 #footerLogo {
   height: 125px;
-  width: auto;
-  bottom: 60px;
-  left: -60px;
-  position: absolute;
-  z-index: 1; }
+  width: auto; }
 
 #hashtagLogo {
   height: 100px;
-  width: auto;
-  top: 210px;
-  left: 145px;
-  position: absolute; }
+  width: auto; }
 
 .footerRelative {
   position: relative;
   z-index: 1; }
 
 .footerSocial {
-  color: #b8b8b8;
+  color: black;
   margin: 5px;
   z-index: 1; }
   .footerSocial:hover {
-    color: black; }
+    color: #b8b8b8; }
 
 #footerIcons {
   margin-bottom: 100px; }
