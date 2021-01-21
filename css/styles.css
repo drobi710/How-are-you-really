@@ -165,6 +165,9 @@ button {
   background-size: cover;
   -o-background-size: cover; }
 
+#faqContainer {
+  height: 1000px; }
+
 .form-group {
   font-family: "Montserrat", sans-serif;
   color: black; }
