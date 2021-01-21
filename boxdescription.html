@@ -22,11 +22,6 @@
 
 <body id="boxDescBody">
     
-    <header>
-
-    </header>
-
-
 <!-- navbar -->
 <nav class="navbar navbar-expand-md bg-transparent navbar-light ">
     <!-- navbar toggler -->
@@ -102,15 +97,16 @@
 <!-- modal pop-up for login end -->
 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="boxDescContainer">
         <div class="row row-content d-flex align-items-center m-3">
             <div class="col-md-6"></div>
             <div class="col justify-content-end">
-                <div class="row row-content pt-3 pb-2">
+                <div class="row row-content mt-3">
                     <div class="col d-flex justify-content-center">
                         <h2>What to Expect in a Box</h2>
                     </div>
                 </div>
+                <hr class="mb-4">
                 <div class="row row-content">
                     <div class="col">
                         <div id="carouselBoxContents" class="carousel slide" data-pause="true">
@@ -163,9 +159,53 @@
         </div>
     </div>
 
-    <footer>
-
-    </footer>
+    <footer class="footer bg-white">
+        <div class="container mt-5" id="footerCard">
+            <div class="row justify-content-center">
+                <div class="col mt-5 text-center">
+                    <a href="/homepage.html"><img id="footerLogo" class="" src="/img/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="card text-center border-0 mx-auto" style="width: 400px;">
+                        <div class="card-body">
+                            <div class="card-title headerText">Get our emails:</div>
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light mr-1 w-20 footerRelative" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn myDarkBtn" type="button">Submit</button>
+                                    </div>
+                                </div>
+                                <small id="emailJoin" class="form-text text-muted font-italic mt-2">Join our newsletter for the latest offers, sneak peeks, giveaways & more!</small>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-auto"><a href="/homepage.html" class="footerLinks">Home</a></div>
+                <div class="col-auto"><a href="/store.html" class="footerLinks">Get Started</a></div>
+                <div class="col-auto"><a href="/faq.html" class="footerLinks">FAQ</a></div>
+                <div class="col-auto"><a href="/howitworks.html" class="footerLinks">How It Works</a></div>
+                <div class="col-auto"><a href="/boxdescription.html" class="footerLinks">What's in the Box</a></div>
+            </div>
+            <div class="row">
+                <div class="col text-center my-3">
+                    <a href="https://www.instagram.com/"><img id="hashtagLogo" class="" src="/img/HowAreYouReallyHastag.png" alt="how are you really Hastag"></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto" id="footerIcons">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-square footerSocial"></a>
+                    <a href="https://mail.google.com/" class="fa fa-envelope footerSocial"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter footerSocial"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram footerSocial"></a>
+                </div>
+            </div>
+        </div>
+    </footer>>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

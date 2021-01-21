@@ -131,14 +131,16 @@ button {
   /* Firefox */ }
 
 #boxDescBody {
-  background: url(/img/whatsinboxbkg.jpg);
-  background-color: #29232d;
+  background: url(/img/whatsinboxbkg.jpg) fixed;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
+
+#boxDescContainer {
+  height: 1200px; }
 
 .carousel-caption {
   position: relative;
