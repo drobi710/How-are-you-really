@@ -28,6 +28,10 @@ h1, h2, h3, h5, h6 {
     }
 }
 
+.bg-midtrans {
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
 #navText, #loginButton {
     color: $color-primary;
     font-family: $secondary-font;
