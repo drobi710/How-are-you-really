@@ -1,9 +1,10 @@
 How are you, Really?
 
-Portfolio project- This is a responsive website for a fictional company that sells monthly subscription boxes for mental health wellness. I designed and devloped the website as a passion project. I am extremely passionate about mental health and thought, especially during these times, that a subscription box would keep people looking forward to something and remind them to nurture their selves every month.
+Passion Portfolio project - website for a fictional company that sells monthly subscription boxes for mental health wellness. 
 
-HTML, CSS, Sass, JS, Bootstrap, fontawesome, googlefonts and jQuery so far
-(will update as skillset expands)
+I have a fervent passion towards mental health awareness. Many people struggle to understand their own self and it causes them to suppresses and limit their capabilities. We can learn how to transform negative thoughts into positive behaviors and live a more fulfilled life. A life where we have the confidence and strength to face challenges and live out our dreams. 
+
+This site includes HTML, CSS, Sass, JS, Bootstrap, and jQuery so far. Will update as skills set expands.
 
 Large Screen
 ![alt text](https://github.com/drobi710/How-are-you-really/blob/master/img/howareyoureally.png)
