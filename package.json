@@ -4,29 +4,20 @@
   "description": "Portfolio project- This is a website for a fictional company that sells monthly subscription boxes for mental health, includes HTML, CSS, Sass, JS, Bootstrap, and jQuery so far",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts",
-    "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin boxdescription.html -d dist --htmlmin -o dist/boxdescription.html && usemin faq.html -d dist --htmlmin -o dist/faq.html && usemin store.html -d dist --htmlmin -o dist/store.html && usemin shoppingcart.html -d dist --htmlmin -o dist/shoppingcart.html && usemin navigation.html -d dist --htmlmin -o dist/navigation.html && usemin loginmodal.html -d dist --htmlmin -o dist/loginmodal.html && usemin howitworks.html -d dist --htmlmin -o dist/howitworks.html && usemin homepage.html -d dist --htmlmin -o dist/homepage.html && usemin footer.html -d dist --htmlmin -o dist/footer.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Danielle Robitshek",
   "license": "ISC",
   "devDependencies": {
-    "copyfiles": "^2.2.0",
-    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.0",
-    "parallelshell": "3.0.1",
-    "rimraf": "^3.0.2",
-    "usemin-cli": "^0.6.0"
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
