@@ -1,232 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-<!-- build:css css/main.css -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-<script src="https://kit.fontawesome.com/d6878949a0.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-<link rel="stylesheet" href="css/styles.css" />
-<!-- endbuild -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- add non css links here example: google fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" />
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6878949a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
 
+    <!-- add non css links here example: google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+    />
 
     <title>How are you, Really?</title>
-</head>
-<body id="faqBody">
-    
-<!-- navbar -->
-<nav class="navbar navbar-expand-md bg-transparent navbar-light ">
-    <!-- navbar toggler -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- logo -->
-        <a href="/homepage.html"><img src="/img/logo.png" alt="logo" id="navLogo"></a>
-    <!-- navbar insides -->
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a id="navText" class="nav-link" href="/homepage.html">Home</a>
-            </li>
-           <li class="nav-item dropdown">
-              <a id="navText" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Learn More
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a id="navText" class="dropdown-item" href="/howitworks.html">How It Works</a>
-                <a id="navText" class="dropdown-item" href="/boxdescription.html">What's in the Box?</a>
-                <a id="navText" class="dropdown-item" href="#">FAQ</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" role="button" id="loginButton">Log In</a>
-            </li>
-            <li class="nav-item">
-              <a id="navText" class="nav-link" href="/shoppingcart.html">My Cart</a>
-            </li>
-          </ul>
-        </div>
-    <!-- get started button -->
-        <a id="getStartedBtn" href="/store.html" class="btn block-btn btn-large navbar-btn" role="button">GET STARTED</a>
-      </nav>
+  </head>
+  <body id="faqBody">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent navbar-light">
+      <!-- navbar toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+        aria-controls="myNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- logo -->
+      <a href="/homepage.html"
+        ><img src="/img/logo.png" alt="logo" id="navLogo"
+      /></a>
+      <!-- navbar insides -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a id="navText" class="nav-link" href="/homepage.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              id="navText"
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Learn More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="navText" class="dropdown-item" href="/howitworks.html"
+                >How It Works</a
+              >
+              <a id="navText" class="dropdown-item" href="/boxdescription.html"
+                >What's in the Box?</a
+              >
+              <a id="navText" class="dropdown-item" href="#">FAQ</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" role="button" id="loginButton">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a id="navText" class="nav-link" href="/shoppingcart.html"
+              >My Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- get started button -->
+      <a
+        id="getStartedBtn"
+        href="/store.html"
+        class="btn block-btn btn-large navbar-btn"
+        role="button"
+        >GET STARTED</a
+      >
+    </nav>
     <!-- navbar end -->
 
     <!-- modal pop up for login -->
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <!-- modal header with X-botton to close -->
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times; </button>
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <!-- modal header with X-botton to close -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="form-title text-center">
+                <h4>Sign-In</h4>
+              </div>
+              <form>
+                <div class="form-group">
+                  <label for="email1" class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email1"
+                    placeholder=""
+                  />
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="form-title text-center">
-                        <h4>Sign-In</h4>
-                        </div>
-                        <form>
-                            <div class="form-group">
-                                <label for="email1" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email1"placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="password1" class="form-label">Password:</label>
-                                <input type="password" class="form-control" id="password1" placeholder="">
-                            </div>
-                            <button type="button" class="btn btn-block" id="signInBtn">Sign In</button>
-                            <hr>
-                            <div class="form-title text-center">
-                                <h4 class="p-2">Sign-Up</h4>
-                                <p>Welcome! It's quick and easy to set up an account.</p>
-                            </div>
-                            <button type="button" class="btn btn-block"  id="createAccBtn">Create an Account</button>
-                        </form>
-                    </div>
+                <div class="form-group">
+                  <label for="password1" class="form-label">Password:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password1"
+                    placeholder=""
+                  />
                 </div>
+                <button type="button" class="btn btn-block" id="signInBtn">
+                  Sign In
+                </button>
+                <hr />
+                <div class="form-title text-center">
+                  <h4 class="p-2">Sign-Up</h4>
+                  <p>Welcome! It's quick and easy to set up an account.</p>
+                </div>
+                <button type="button" class="btn btn-block" id="createAccBtn">
+                  Create an Account
+                </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-<!-- modal pop-up for login end -->
-
+    <!-- modal pop-up for login end -->
 
     <!-- FAQ Accordian card -->
     <div class="container mt-3 mb-5" id="faqContainer">
-        <div class="row row-content">
-            <div class="col">
-                <!-- accordian card heading -->
-                <h3>FAQ</h3>
-                <hr>
-                <!-- accordian -->
-                <div id="accordionFAQ" class="bg-midtrans">
-                    <!-- first accordian tab -->
-                    <div class="card bg-transparent">
-                        <div role="tab" class="card-header">
-                            <!-- tab heading -->
-                            <h4 id="FAQHeaders">
-                                <a data-toggle="collapse" data-target="#howWorkFAQ">
-                                    How does it work?
-                                </a>
-                            </h4>
-                            <!-- tab body -->
-                            <div class="collapse show" id="howWorkFAQ" data-parent="#accordionFAQ">
-                                <div class="card-body">
-                                    <p class="">It’s really simple (like all good inspiration!), just pick your subscription (monthly, or prepay), then each month we will send you a carefully curated box that includes items to help you live your most inspired life. Sign up easily and cancel anytime!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- second accordian tab -->
-                    <div class="card bg-transparent">
-                        <div role="tab" class="card-header">
-                            <h4 id="FAQHeaders">
-                                <a class="collapsed" data-toggle="collapse" data-target="#itemsFAQ">
-                                    What will be in my box?
-                                </a>
-                            </h4>
-                            <div class="collapse" id="itemsFAQ" data-parent="#accordionFAQ">
-                                <div class="card-body">
-                                    <p class="">Each month we choose a different inspirational theme and products that go along with that.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- third accordian tab -->
-                    <div class="card bg-transparent">
-                        <div role="tab" class="card-header">
-                            <h4 id="FAQHeaders">
-                                <a class="collapsed" data-toggle="collapse" data-target="#giftFAQ">
-                                    Can I send a box as a gift?
-                                </a>
-                            </h4>
-                            <div class="collapse" id="giftFAQ" data-parent="#accordionFAQ">
-                                <div class="card-body">
-                                    <p class="">Absolutely! Inspiration is such a wonderful gift, we’re sure whomever you gift this to will be delighted. When you check out, you will fill out your billing information, then at the bottom of that section, simply choose “Ship to a different address” and you can enter your gift recipient’s address. We do not include a packing slip with the box, so they won’t ever see your payment information.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fourth accordian tab -->
-                    <div class="card bg-transparent">
-                        <div role="tab" class="card-header">
-                            <h4 id="FAQHeaders">
-                                <a class="collapsed" data-toggle="collapse" data-target="#damageFAQ">
-                                    My Inspiration Box arrived damaged, what do I do?
-                                </a>
-                            </h4>
-                            <div class="collapse" id="damageFAQ" data-parent="#accordionFAQ">
-                                <div class="card-body">
-                                    <p class="">We’re so sorry! Contact us by email and our customer care team will figure out a solution right away!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="row row-content">
+        <div class="col">
+          <!-- accordian card heading -->
+          <h3>FAQ</h3>
+          <hr />
+          <!-- accordian -->
+          <div id="accordionFAQ" class="bg-midtrans">
+            <!-- first accordian tab -->
+            <div class="card bg-transparent">
+              <div role="tab" class="card-header">
+                <!-- tab heading -->
+                <h4 id="FAQHeaders">
+                  <a data-toggle="collapse" data-target="#howWorkFAQ">
+                    How does it work?
+                  </a>
+                </h4>
+                <!-- tab body -->
+                <div
+                  class="collapse show"
+                  id="howWorkFAQ"
+                  data-parent="#accordionFAQ"
+                >
+                  <div class="card-body">
+                    <p class="">
+                      It’s really simple (like all good inspiration!), just pick
+                      your subscription (monthly, or prepay), then each month we
+                      will send you a carefully curated box that includes items
+                      to help you live your most inspired life. Sign up easily
+                      and cancel anytime!
+                    </p>
+                  </div>
                 </div>
+              </div>
             </div>
+            <!-- second accordian tab -->
+            <div class="card bg-transparent">
+              <div role="tab" class="card-header">
+                <h4 id="FAQHeaders">
+                  <a
+                    class="collapsed"
+                    data-toggle="collapse"
+                    data-target="#itemsFAQ"
+                  >
+                    What will be in my box?
+                  </a>
+                </h4>
+                <div class="collapse" id="itemsFAQ" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                    <p class="">
+                      Each month we choose a different inspirational theme and
+                      products that go along with that.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third accordian tab -->
+            <div class="card bg-transparent">
+              <div role="tab" class="card-header">
+                <h4 id="FAQHeaders">
+                  <a
+                    class="collapsed"
+                    data-toggle="collapse"
+                    data-target="#giftFAQ"
+                  >
+                    Can I send a box as a gift?
+                  </a>
+                </h4>
+                <div class="collapse" id="giftFAQ" data-parent="#accordionFAQ">
+                  <div class="card-body">
+                    <p class="">
+                      Absolutely! Inspiration is such a wonderful gift, we’re
+                      sure whomever you gift this to will be delighted. When you
+                      check out, you will fill out your billing information,
+                      then at the bottom of that section, simply choose “Ship to
+                      a different address” and you can enter your gift
+                      recipient’s address. We do not include a packing slip with
+                      the box, so they won’t ever see your payment information.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fourth accordian tab -->
+            <div class="card bg-transparent">
+              <div role="tab" class="card-header">
+                <h4 id="FAQHeaders">
+                  <a
+                    class="collapsed"
+                    data-toggle="collapse"
+                    data-target="#damageFAQ"
+                  >
+                    My Inspiration Box arrived damaged, what do I do?
+                  </a>
+                </h4>
+                <div
+                  class="collapse"
+                  id="damageFAQ"
+                  data-parent="#accordionFAQ"
+                >
+                  <div class="card-body">
+                    <p class="">
+                      We’re so sorry! Contact us by email and our customer care
+                      team will figure out a solution right away!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <footer class="footer bg-white">
-        <div class="container mt-5" id="footerCard">
-            <div class="row justify-content-center">
-                <div class="col mt-5 text-center">
-                    <a href="/homepage.html"><img id="footerLogo" class="" src="/img/logo.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <div class="card text-center border-0 mx-auto">
-                        <div class="card-body">
-                            <div class="card-title headerText">Get our emails:</div>
-                            <form action="">
-                                <div class="input-group">
-                                    <input type="text" class="form-control bg-light mr-1 w-20" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn myDarkBtn" type="button">Submit</button>
-                                    </div>
-                                </div>
-                                <small id="emailJoin" class="form-text text-muted font-italic mt-2">Join our newsletter for the latest offers, sneak peeks, giveaways & more!</small>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-3">
-                <div class="col-auto"><a href="/homepage.html" class="footerLinks">Home</a></div>
-                <div class="col-auto"><a href="/store.html" class="footerLinks">Get Started</a></div>
-                <div class="col-auto"><a href="/faq.html" class="footerLinks">FAQ</a></div>
-                <div class="col-auto"><a href="/howitworks.html" class="footerLinks">How It Works</a></div>
-                <div class="col-auto"><a href="/boxdescription.html" class="footerLinks">What's in the Box</a></div>
-            </div>
-            <div class="row">
-                <div class="col text-center my-3">
-                    <a href="https://www.instagram.com/"><img id="hashtagLogo" class="" src="/img/HowAreYouReallyHastag.png" alt="how are you really Hastag"></a>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-auto" id="footerIcons">
-                    <a href="https://www.facebook.com/" class="fab fa-facebook-square footerSocial"></a>
-                    <a href="https://mail.google.com/" class="fa fa-envelope footerSocial"></a>
-                    <a href="https://twitter.com/" class="fa fa-twitter footerSocial"></a>
-                    <a href="https://www.instagram.com/" class="fab fa-instagram footerSocial"></a>
-                </div>
-            </div>
+      <div class="container mt-5" id="footerCard">
+        <div class="row justify-content-center">
+          <div class="col mt-5 text-center">
+            <a href="/homepage.html"
+              ><img id="footerLogo" class="" src="/img/logo.png" alt="logo"
+            /></a>
+          </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="card text-center border-0 mx-auto">
+              <div class="card-body">
+                <div class="card-title headerText">Get our emails:</div>
+                <form action="">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control bg-light mr-1 w-20"
+                      placeholder="Email"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn myDarkBtn" type="button">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                  <small
+                    id="emailJoin"
+                    class="form-text text-muted font-italic mt-2"
+                    >Join our newsletter for the latest offers, sneak peeks,
+                    giveaways & more!</small
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <div class="col-auto">
+            <a href="/homepage.html" class="footerLinks">Home</a>
+          </div>
+          <div class="col-auto">
+            <a href="/store.html" class="footerLinks">Get Started</a>
+          </div>
+          <div class="col-auto">
+            <a href="/faq.html" class="footerLinks">FAQ</a>
+          </div>
+          <div class="col-auto">
+            <a href="/howitworks.html" class="footerLinks">How It Works</a>
+          </div>
+          <div class="col-auto">
+            <a href="/boxdescription.html" class="footerLinks"
+              >What's in the Box</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center my-3">
+            <a href="https://www.instagram.com/"
+              ><img
+                id="hashtagLogo"
+                class=""
+                src="/img/HowAreYouReallyHastag.png"
+                alt="how are you really Hastag"
+            /></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto" id="footerIcons">
+            <a
+              href="https://www.facebook.com/"
+              class="fab fa-facebook-square footerSocial"
+            ></a>
+            <a
+              href="https://mail.google.com/"
+              class="fa fa-envelope footerSocial"
+            ></a>
+            <a
+              href="https://twitter.com/"
+              class="fa fa-twitter footerSocial"
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              class="fab fa-instagram footerSocial"
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
-</body>
-
+    <!-- endbuild -->
+  </body>
 </html>
