@@ -4,9 +4,9 @@
   "description": "Portfolio project- This is a website for a fictional company that sells monthly subscription boxes for mental health, includes HTML, CSS, Sass, JS, Bootstrap, and jQuery so far",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run usemin",
     "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
