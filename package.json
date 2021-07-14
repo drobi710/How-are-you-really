@@ -4,8 +4,9 @@
   "description": "Portfolio project- This is a website for a fictional company that sells monthly subscription boxes for mental health, includes HTML, CSS, Sass, JS, Bootstrap, and jQuery so far",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
@@ -25,13 +26,14 @@
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
     "rimraf": "^3.0.2",
-    "usemin-cli": "^0.6.0",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.2",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
-  },
-  "dependencies": {}
+  }
 }
